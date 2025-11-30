@@ -45,7 +45,7 @@ export default function Experience() {
 
         <div className="relative pl-8">
           {/* Timeline line */}
-          <div className="absolute left-[-1px] top-0 bottom-0 w-0.5 bg-gradient-to-b from-accent via-accent/50 to-transparent" />
+          <div className="absolute left-0 top-0 bottom-0 w-0.5  from-accent via-accent/50 to-transparent" />
 
           <div className="space-y-12">
             {experienceData.map((exp, index) => (

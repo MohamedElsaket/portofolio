@@ -119,14 +119,14 @@ export default function Projects() {
               className="project-card group cursor-pointer"
             >
               <div className="relative overflow-hidden rounded-xl border border-card bg-card/50 backdrop-blur-sm p-6 h-full flex flex-col">
-                <div className="relative h-48 mb-4 overflow-hidden rounded-lg bg-gradient-to-br from-accent/20 to-accent/5">
+                <div className="relative h-48 mb-4 overflow-hidden rounded-lg  from-accent/20 to-accent/5">
                   <a href={project.link} target="_blank">
                     <img
                       src={project.image || "/placeholder.svg"}
                       alt={project.title}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <div className="absolute inset-0  from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   </a>
                 </div>
 
@@ -137,7 +137,7 @@ export default function Projects() {
                 >
                   {project.title}
                 </a>
-                <p className="text-foreground/60 text-sm mb-4 flex-grow leading-relaxed">
+                <p className="text-foreground/60 text-sm mb-4 leading-relaxed">
                   {project.description}
                 </p>
 
