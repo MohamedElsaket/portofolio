@@ -16,7 +16,7 @@ const experienceData = [
     period: "2020 - 2022",
     description:
       "Developed and maintained web large e-commerce using Next.js and Typesript. I worked on handling the data fetching and optimizing performance and enhancing user experience to deliver high-quality products.",
-    skills: ["Reactjs", "JavaScript", "Neaxtjs", "TypeScript", "Web APIs"],
+    skills: ["Reactjs", "JavaScript", "Nextjs", "TypeScript", "Web APIs"],
   },
   {
     id: 3,
