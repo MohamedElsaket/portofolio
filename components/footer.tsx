@@ -22,7 +22,7 @@ const socialLinks = [
   {
     name: "WhatsApp",
     icon: <Phone />,
-    url: "https://wa.me/01030848281",
+    url: "https://wa.me/+201030848281",
   },
 ];
 
