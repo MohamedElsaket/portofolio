@@ -3,27 +3,26 @@
 const experienceData = [
   {
     id: 1,
-    role: "Senior Frontend Developer",
-    company: "Tech Innovations Inc",
+    role: "Frontend Developer",
+    company: "Freelance",
     period: "2022 - Present",
-    description:
-      "Leading frontend architecture and mentoring junior developers. Built scalable design systems and improved performance by 40%.",
+    description: "",
     skills: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
   },
   {
     id: 2,
-    role: "Frontend Developer",
-    company: "Digital Solutions Co",
+    role: "Junior Frontend Developer",
+    company: "Slash Hub",
     period: "2020 - 2022",
     description:
-      "Developed responsive web applications for clients across various industries. Implemented complex animations and interactive features.",
-    skills: ["React", "JavaScript", "CSS3", "Web APIs"],
+      "Developed and maintained web large e-commerce using Next.js and Typesript. I worked on handling the data fetching and optimizing performance and enhancing user experience to deliver high-quality products.",
+    skills: ["Reactjs", "JavaScript", "Neaxtjs", "TypeScript", "Web APIs"],
   },
   {
     id: 3,
-    role: "Junior Developer",
-    company: "Creative Web Studio",
-    period: "2019 - 2020",
+    role: "Frontend Developer | Internship",
+    company: "Creativo",
+    period: "2019 - 2021",
     description:
       "Started my career building interactive websites and learning modern web technologies. Collaborated with designers and product teams.",
     skills: ["HTML", "CSS", "JavaScript", "jQuery"],

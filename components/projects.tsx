@@ -4,8 +4,6 @@ const projectsData = [
   {
     id: 1,
     title: "Bookwise | University Library",
-    description:
-      "A modern, responsive e-commerce platform built with React and Next.js featuring real-time inventory management and smooth animations.",
     tags: ["React", "Next.js", "Tailwind", "TypeScript"],
     image: "/bookwise.png",
     link: "https://university-library-ten-sand.vercel.app/",
@@ -14,8 +12,6 @@ const projectsData = [
   {
     id: 2,
     title: "El-Saket | Store",
-    description:
-      "Interactive analytics dashboard with real-time data visualization, charts, and dynamic filtering capabilities.",
     tags: ["React", "Next.js", "PHP", "MySQL"],
     image: "/elsaket-store.png",
     link: "https://elsaket-store.vercel.app/",
@@ -24,8 +20,6 @@ const projectsData = [
   {
     id: 3,
     title: "Forever | Clothes E-Commerce",
-    description:
-      "Full-stack social networking application with real-time messaging, notifications, and user interactions.",
     tags: ["React.js", "React Router", "Tailwind"],
     image: "/forever.png",
     link: "https://mohamedelsaket.github.io/clothes-e-commerce/",
@@ -34,8 +28,6 @@ const projectsData = [
   {
     id: 4,
     title: "Fast React Pizza",
-    description:
-      "Stunning AI-powered chat application with beautiful UI, conversation history, and advanced features.",
     tags: ["React", "Redux ToolKit", "Tailwind"],
     image: "/Fast React Pizza.png",
     link: "https://mohamedelsaket.github.io/Pizza/",
@@ -44,8 +36,6 @@ const projectsData = [
   {
     id: 5,
     title: "Next E-Commerce",
-    description:
-      "Comprehensive component library with Storybook, accessibility features, and extensive documentation.",
     tags: ["React", "Next.js", "wix", "Tailwind", "TypeScript"],
     image: "/next-ecommerce.png",
     link: "https://next-ecommerce-ten-black.vercel.app/",
@@ -54,8 +44,6 @@ const projectsData = [
   {
     id: 6,
     title: "Fitness Exercises",
-    description:
-      "Immersive 3D web experience with Three.js, interactive models, and smooth animations.",
     tags: ["React.js", "MUI", "emotion"],
     image: "/fitness-exercises.png",
     link: "https://mohamedelsaket.github.io/fitness-exercises-app/",
@@ -64,8 +52,6 @@ const projectsData = [
   {
     id: 7,
     title: "Smart Villa",
-    description:
-      "Immersive 3D web experience with Three.js, interactive models, and smooth animations.",
     tags: ["React.js", "React ReDUX", "framer motion"],
     image: "/smart-villa.png",
     link: "https://mohamedelsaket.github.io/smart-villa/",
@@ -74,8 +60,6 @@ const projectsData = [
   {
     id: 8,
     title: "Brainwave",
-    description:
-      "Immersive 3D web experience with Three.js, interactive models, and smooth animations.",
     tags: ["React.js", "React Router"],
     image: "/Brainwave.png",
     link: "https://mohamedelsaket.github.io/Brainwave/",
@@ -84,8 +68,6 @@ const projectsData = [
   {
     id: 9,
     title: "MediTro",
-    description:
-      "Immersive 3D web experience with Three.js, interactive models, and smooth animations.",
     tags: ["React.js"],
     image: "/meditro.png",
     link: "https://mohamedelsaket.github.io/MediTro/",
@@ -94,8 +76,6 @@ const projectsData = [
 ];
 
 export default function Projects() {
-  // const [hoveredId, setHoveredId] = useState<number | null>(null);
-
   return (
     <section id="projects" className="min-h-screen py-24 px-4">
       <div className="max-w-6xl mx-auto">
@@ -110,13 +90,8 @@ export default function Projects() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projectsData.map((project) => (
-            <div
-              key={project.id}
-              // onMouseEnter={() => setHoveredId(project.id)}
-              // onMouseLeave={() => setHoveredId(null)}
-              className="project-card group cursor-pointer"
-            >
-              <div className="relative overflow-hidden rounded-xl border border-card bg-card/50 backdrop-blur-sm p-6 h-full flex flex-col">
+            <div key={project.id} className="project-card group cursor-pointer">
+              <div className="relative overflow-hidden rounded-xl border border-card bg-card/50 backdrop-blur-sm p-6 h-full flex flex-col gap-4">
                 <div className="relative h-48 mb-4 overflow-hidden rounded-lg  from-accent/20 to-accent/5">
                   <a href={project.link} target="_blank">
                     <img
@@ -135,9 +110,9 @@ export default function Projects() {
                 >
                   {project.title}
                 </a>
-                <p className="text-foreground/60 text-sm mb-4 leading-relaxed">
+                {/* <p className="text-foreground/60 text-sm mb-4 leading-relaxed">
                   {project.description}
-                </p>
+                </p> */}
 
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag) => (
@@ -157,12 +132,7 @@ export default function Projects() {
                     </a>
                   </button>
                   <button className="flex-1 py-2 bg-accent text-background rounded-lg hover:shadow-lg hover:shadow-accent/50 transition-all duration-300 text-sm font-semibold">
-                    <a
-                      href={project.codeLink}
-                      //
-                    >
-                      Code
-                    </a>
+                    <a href={project.codeLink}>Code</a>
                   </button>
                 </div>
               </div>

@@ -1,10 +1,29 @@
 "use client";
 
+import { Github, Linkedin, Mail, Phone } from "lucide-react";
+import Link from "next/link";
+
 const socialLinks = [
-  { name: "GitHub", icon: "⚙️", url: "#" },
-  { name: "LinkedIn", icon: "💼", url: "#" },
-  { name: "Twitter", icon: "𝕏", url: "#" },
-  { name: "Email", icon: "✉️", url: "#" },
+  {
+    name: "GitHub",
+    icon: <Github />,
+    url: "https://github.com/MohamedElsaket",
+  },
+  {
+    name: "LinkedIn",
+    icon: <Linkedin />,
+    url: "https://www.linkedin.com/in/mohamed-elsaket-996285276/",
+  },
+  {
+    name: "Email",
+    icon: <Mail />,
+    url: "mailto:mohamedelsaket25@gmail.com",
+  },
+  {
+    name: "WhatsApp",
+    icon: <Phone />,
+    url: "https://wa.me/01030848281",
+  },
 ];
 
 export default function Footer() {
@@ -29,12 +48,12 @@ export default function Footer() {
             <ul className="space-y-2 text-foreground/60 text-sm">
               {["About", "Projects", "Experience"].map((link) => (
                 <li key={link}>
-                  <a
+                  <Link
                     href={`#${link.toLowerCase()}`}
                     className="hover:text-accent transition-colors duration-300"
                   >
                     {link}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -44,7 +63,8 @@ export default function Footer() {
             <h5 className="font-semibold text-foreground mb-4">Connect</h5>
             <div className="flex gap-4">
               {socialLinks.map((social) => (
-                <a
+                <Link
+                  target="_blank"
                   key={social.name}
                   href={social.url}
                   aria-label={social.name}
@@ -52,14 +72,14 @@ export default function Footer() {
                   title={social.name}
                 >
                   {social.icon}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
         </div>
 
         <div className="border-t border-accent/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-foreground/50">
-          <p>&copy; 2025 Your Name. All rights reserved.</p>
+          <p>&copy; 2025 Mohamed Elsaket. All rights reserved.</p>
           <div className="flex gap-6">
             <a
               href="#"
