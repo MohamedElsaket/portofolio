@@ -1,7 +1,5 @@
 "use client";
 
-import { useState } from "react";
-
 const projectsData = [
   {
     id: 1,
@@ -96,7 +94,7 @@ const projectsData = [
 ];
 
 export default function Projects() {
-  const [hoveredId, setHoveredId] = useState<number | null>(null);
+  // const [hoveredId, setHoveredId] = useState<number | null>(null);
 
   return (
     <section id="projects" className="min-h-screen py-24 px-4">
@@ -114,8 +112,8 @@ export default function Projects() {
           {projectsData.map((project) => (
             <div
               key={project.id}
-              onMouseEnter={() => setHoveredId(project.id)}
-              onMouseLeave={() => setHoveredId(null)}
+              // onMouseEnter={() => setHoveredId(project.id)}
+              // onMouseLeave={() => setHoveredId(null)}
               className="project-card group cursor-pointer"
             >
               <div className="relative overflow-hidden rounded-xl border border-card bg-card/50 backdrop-blur-sm p-6 h-full flex flex-col">

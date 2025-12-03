@@ -35,7 +35,9 @@ export default function Hero() {
         <div className="space-y-6 hero-text">
           <div className="inline-block">
             <div className="text-6xl md:text-7xl font-bold mb-4">
-              <span className="glow-text block mb-2">Hey, I'm Mohamed</span>
+              <span className="glow-text block mb-2">
+                Hey, I&apos;m Mohamed
+              </span>
               <span className="text-4xl md:text-6xl glow-accent block h-16 md:h-20">
                 {displayedText}
                 {displayedText.length < fullText.length && (
